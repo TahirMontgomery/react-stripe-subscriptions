@@ -1,0 +1,101 @@
+.card {
+  width: 250px;
+  position: relative;
+  background-color: white;
+  border: 2px solid lightgray;
+  padding: 20px 0px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  transition: bottom 0.1s ease;
+  bottom: 0;
+  margin: 0px 10px;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card.active {
+  bottom: 40px;
+}
+
+.card__header {
+  text-align: center;
+}
+
+.card__title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #6c757d;
+  transition: color 0.1s ease;
+}
+
+.active .card__title {
+  color: #3a7ca5;
+}
+
+.card__subtitle {
+  font-size: 16px;
+  font-weight: 500;
+  color: #6c757d;
+}
+
+.price {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 5px 0px;
+}
+
+.dollar {
+  font-size: 48px;
+  font-weight: 700;
+  color: #6c757d;
+  transition: color 0.1s ease;
+}
+
+.active .dollar {
+  font-size: 48px;
+  font-weight: 700;
+  color: #3a7ca5;
+}
+
+.cents {
+  font-size: 14px;
+  font-weight: 700;
+  color: #6c757d;
+  padding-top: 10px;
+  transition: color 0.1s ease;
+}
+
+.active .cents {
+  color: #3a7ca5;
+}
+
+.time {
+  align-self: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #6c757d;
+}
+
+.features {
+  margin: 5px 0;
+}
+
+.features__header {
+  font-size: 16px;
+  font-weight: 600;
+  color: #6c757d;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.feature__list {
+  padding: 0 5px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
